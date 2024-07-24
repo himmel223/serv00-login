@@ -1,4 +1,7 @@
-## serv00自动化批量保号，每3天自动登录一次面板，并且发送消息到Telegram
+## serv00与ct8自动化批量保号，每3天自动登录一次面板，并且发送消息到Telegram
+
+## 视频教程看这里
+[免费白嫖10年VPS服务器serv00 并且一键部署自己的专属自建Vless节点 ｜小白教程｜自动化批量保号](https://youtu.be/QnlzpvDl_mo)
 
 利用github Action以及python脚本实现
 
@@ -31,8 +34,9 @@
         - 
           ```json
           [
-            {"username": "serv00的账号", "password": "serv00的密码", "panelnum": "服务器号，比如s6.serv00.com的就是6"},
-            {"username": "user2", "password": "password2", "panelnum": 2}
+            {"username": "serv00的账号", "password": "serv00的密码", "panel": "panel6.serv00.com"},
+            {"username": "ct8的账号", "password": "ct8的密码", "panel": "panel.ct8.pl"},
+            {"username": "user2", "password": "password2", "panel": "panel6.serv00.com"}
           ]
           ```
         - `TELEGRAM_BOT_TOKEN`: 你的 Telegram Bot 的 API Token。
@@ -66,9 +70,10 @@
     - 示例值:
       ```json
       [
-        {"username": "serv00的账号", "password": "serv00的密码", "panelnum": "服务器号，比如s6.serv00.com的就是6"},
-        {"username": "user2", "password": "password2", "panelnum": 2}
-      ]
+            {"username": "serv00的账号", "password": "serv00的密码", "panel": "panel6.serv00.com"},
+            {"username": "ct8的账号", "password": "ct8的密码", "panel": "panel.ct8.pl"},
+            {"username": "user2", "password": "password2", "panel": "panel6.serv00.com"}
+          ]
       ```
     - 获取方法: 创建一个包含serv00账号信息的 JSON 文件，并将其内容添加到 GitHub 仓库的 Secrets 中。
 
@@ -78,3 +83,6 @@
 - **更新和删除**: 如果需要更新或删除 Secrets，可以通过仓库的 Secrets 页面进行管理。
 
 通过以上步骤，你就可以成功将代码 fork 到你的仓库下并运行它了。如果需要进一步的帮助或有其他问题，请随时告知！
+
+## 🌟🌟🌟Star！！！走起
+[![Stargazers over time](https://starchart.cc/yixiu001/serv00-login.svg?variant=adaptive)](https://starchart.cc/yixiu001/serv00-login)
